@@ -31,6 +31,6 @@ namespace Ball.Scripts
         public void SwapDirection() => direction *= -1;
 
         public void SetSpeedBoost(float multiplier)
-            => DOVirtual.Float(_spdMult, multiplier*.7f, 7, value => _spdMult = value);
+            => DOVirtual.Float(_spdMult, multiplier*.8f, 7, value => _spdMult = value);
     }
 }

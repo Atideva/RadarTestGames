@@ -49,6 +49,8 @@ namespace Ball.Scripts
         {
             DOVirtual.Float(_spdMult, multiplier, 7, value => _spdMult = value);
             mover.SetSpeedBoost(multiplier);
+            var main = moveVfx.main;
+            DOVirtual.Float(_spdMult, multiplier, 7, value => main.simulationSpeed = value);
         }
 
         public void Reset()
